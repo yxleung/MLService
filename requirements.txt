@@ -1,0 +1,8 @@
+scikit-learn
+numpy
+scipy
+pandas
+Flask
+requests
+progressbar
+hurry.filesize

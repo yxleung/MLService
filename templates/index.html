@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Text classify</title>
+</head>
+<body>
+<h1>请输入已分词文本，使用空格分词</h1>
+<form action="/index" method="post">
+    <textarea rows="10" cols="80" name="text"></textarea><br>
+    <input type="submit" style="width:100px;height:30px; value="提交"/>
+</form>
+{% if resp %}
+Text: {{resp.text}}</br>
+Tag:  <font {% if not resp.is_normal %} color="red" {% endif %}>{{resp.tag}}</font>
+{% endif %}
+</body>
+</html>
